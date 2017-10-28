@@ -1,0 +1,2 @@
+rsync -rtvu  html/* root@www.canmoveit.com:/var/www/cmicore-doc
+

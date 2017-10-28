@@ -1,0 +1,25 @@
+
+<CanPorts>
+    <CanPort portname="can0" bitrate="1M" />
+</CanPorts>
+ 
+<ObjectDictionaries>
+    <ObjectDictionary file="/etc/cmi/ingenia_pluto.eds"  name="pluto"/>
+</ObjectDictionaries>
+ 
+<Devices>
+    <Device>
+        <device_ID>0</device_ID> 
+        <can_node_ID>32</can_node_ID>
+        <can_portname>can0</can_portname> 
+        <dictionary_name>pluto</dictionary_name>
+        
+        <Motor>
+            <max_current>1000</max_current>
+            <encoder_resolution>4000</encoder_resolution>
+            <gear_reduction>1</gear_reduction>
+            <invert_direction>false</invert_direction>
+        </Motor>
+    </Device>
+
+</Devices>
